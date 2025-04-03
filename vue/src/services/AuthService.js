@@ -12,6 +12,10 @@ export default {
 
   register(user) {
     return http.post('/register', user)
+  },
+
+  getNeos(startDate, endDate) {
+    return http.get(`/neos?startDate=${startDate}&endDate=${endDate}`);
   }
 
 }
